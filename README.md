@@ -9,7 +9,7 @@ To get started, download and install the latest Unity 2018.1 beta, here: https:/
 ### Get the Package
 These samples already include the necessary manifest in the Packages folder of the project.
 If you want to activate these features in another project:
-1. Find the manifest.json file in the Packages folder of your new project.
+1. Find the manifest.json file in the Packages folder of your project.
 2. Edit it to look like this:
 
 ```xml
