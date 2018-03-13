@@ -41,5 +41,5 @@ If you want to activate these features in another project:
 * The skinning and rigging portion is done in the Scene View along with Hierarchy manipulation and IK setups
 
 ## :exclamation::exclamation::exclamation: Warning :exclamation::exclamation::exclamation:
-**Project backward compatibility between Preview versions is NOT GUARANTEED. Always backup your project before upgrading. Preview features here are not production ready, please DO NOT use this build for your final production. Preview features may be discontinued/dropped.**
+**Project backward compatibility between Preview versions is NOT GUARANTEED. Always backup your project before updating the package. Preview features here are not production ready, please DO NOT use this package for your final production. Preview features may be discontinued/dropped.**
 
