@@ -4,7 +4,7 @@ This repository contains samples of the 2D Animation features.
 
 For use with Unity 2018.1b and newer.
 
-### Documentation
+### Preview Feature Documentation
 * **[2D Animation](https://github.com/Unity-Technologies/2d-animation-samples/blob/master/Documentation/2D%20Animation.md)**
 * **[Inverse Kinematics (IK)](https://github.com/Unity-Technologies/2d-animation-samples/blob/master/Documentation/2D%20Animation.md)**
 
@@ -14,5 +14,3 @@ For use with Unity 2018.1b and newer.
 
 ## :exclamation::exclamation::exclamation: Warning :exclamation::exclamation::exclamation:
 **Project backward compatibility between Preview versions is NOT GUARANTEED. Always backup your project before upgrading. Preview features here are not production ready, please DO NOT use this build for your final production. Preview features may be discontinued/dropped.**
-
-
