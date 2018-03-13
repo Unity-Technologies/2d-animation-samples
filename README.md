@@ -12,7 +12,7 @@ If you want to activate these features in another project:
 1. Find the manifest.json file in the Packages folder of your project.
 2. Edit it to look like this:
 
-```json
+```javascript
 {
   "dependencies": {
   "com.unity.2d.common":"1.0.8-experimental",
