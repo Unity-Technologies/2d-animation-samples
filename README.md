@@ -1,8 +1,6 @@
 # 2d-animation-samples
 
-This repository contains samples of the 2D Animation features.
-
-For use with Unity 2018.1b and newer.
+This repository contains samples of the 2D Animation features to be used with Unity 2018.1b10 and newer.
 
 ## Getting Started
 ### Get the Unity Editor
