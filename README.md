@@ -12,19 +12,14 @@ If you want to activate these features in another project:
 1. Find the manifest.json file in the Packages folder of your project.
 2. Edit it to look like this:
 
-```xml
+```json
 {
   "dependencies": {
   "com.unity.2d.common":"1.0.8-experimental",
   "com.unity.2d.animation":"1.0.13-experimental",
   "com.unity.2d.ik":"1.0.3-experimental"
   },
-  "registry": "https://staging-packages.unity.com",
-  "testables" : [ 
-    "com.unity.2d.common",
-    "com.unity.2d.animation",
-    "com.unity.2d.ik"
-  ]
+  "registry": "https://staging-packages.unity.com"
 }
 ```
 4. Back in Unity, the package will be downloaded and imported. 
