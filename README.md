@@ -29,7 +29,7 @@ If you want to activate these features in another project:
   ]
 }
 ```
-4. Back in Unity, the packaged will be downloaded and imported. 
+4. Back in Unity, the package will be downloaded and imported. 
 5. Done!
 
 ### Preview Feature Documentation
