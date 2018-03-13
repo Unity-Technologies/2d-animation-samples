@@ -25,6 +25,8 @@ If you want to activate these features in another project:
 4. Back in Unity, the package will be downloaded and imported. 
 5. Done!
 
+Find out more about packages here: **[Unity Package Manager](https://docs.unity3d.com/Packages/com.unity.package-manager-ui@1.8/manual/index.html)**
+
 ### Preview Feature Documentation
 * **[2D Animation](https://github.com/Unity-Technologies/2d-animation-samples/blob/master/Documentation/2DAnimation.md)**
 * **[Inverse Kinematics (IK)](https://github.com/Unity-Technologies/2d-animation-samples/blob/master/Documentation/2DIK.md)**
