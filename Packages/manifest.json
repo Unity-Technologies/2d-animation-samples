@@ -4,10 +4,5 @@
 		"com.unity.2d.animation":"1.0.13-experimental",
 		"com.unity.2d.ik":"1.0.3-experimental"
 	},
-	"registry": "https://staging-packages.unity.com",
-	"testables" : [ 
-		"com.unity.2d.common",
-		"com.unity.2d.animation",
-		"com.unity.2d.ik"
-	]
+	"registry": "https://staging-packages.unity.com"
 }
