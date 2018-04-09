@@ -14,9 +14,9 @@ If you want to activate these features in another project:
 
 ```javascript
 {
-	"dependencies": {
-		"com.unity.2d.animation":"1.0.15-preview",
-    "com.unity.2d.ik":"1.0.5-preview"
+"dependencies": {
+	"com.unity.2d.animation":"1.0.15-preview",
+	"com.unity.2d.ik":"1.0.5-preview"
 	},
 	"registry": "https://staging-packages.unity.com"
 }
