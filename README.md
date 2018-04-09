@@ -14,12 +14,11 @@ If you want to activate these features in another project:
 
 ```javascript
 {
-  "dependencies": {
-  "com.unity.2d.common":"1.0.8-experimental",
-  "com.unity.2d.animation":"1.0.13-experimental",
-  "com.unity.2d.ik":"1.0.3-experimental"
-  },
-  "registry": "https://staging-packages.unity.com"
+	"dependencies": {
+		"com.unity.2d.animation":"1.0.15-preview",
+    "com.unity.2d.ik":"1.0.5-preview"
+	},
+	"registry": "https://staging-packages.unity.com"
 }
 ```
 4. Back in Unity, the package will be downloaded and imported. 
