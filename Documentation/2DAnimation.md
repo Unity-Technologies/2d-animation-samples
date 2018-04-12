@@ -2,47 +2,64 @@
 
 ## Workflow
 
-Define Sprite in Sprite Editor ---> Create bones in the Bone Editor ---> Generate and Edit Geometry and Assign Skin Weights in the Geometry and Weight Editor ---> Place Sprite in the Scene and add a Sprite Skin Component to generate the bones ---> Animate Sprite!
+1. Select the **Sprite** in the **Sprite Editor**
+
+2. Build the **Sprite Bones** hierarchy in the **Bone Editor (menu: **Sprite Editor > Bone Editor**)**
+
+3. Generate and edit geometry, and assign skin weights in the **Geometry And Weight Editor** (**menu**: Sprite Editor > Geometry And Weight Editor)
+
+4. Place the **Sprite** in a **Scene** and add the **Sprite Skin** component to generate the bones
+
+5. The **Sprite** is ready to be animated!
 
 ## Bone Editor
 
-This is where a hierarchy of bones for Sprites are defined and edited.![image alt text](images/image_0.png)
+Create and define the bones for your Sprites and their hierarchy in the **Bone Editor**.
 
-## Create and Edit Bones
+![image alt text](images/image_0.png)
 
-There are two modes to creating bones. The Create Chain Bone mode which will create a continuous chain of bones. The Create Free Bone mode will create stand-alone ( isolated ) bones that are parented to a selected bone.
+### Create and Edit Bones
 
-The first bone created will be set as the Root bone for the hierarchy.  In Create Chain Bone mode, new bones are always parented to the previous bone. In Free Bone mode, new bones are parented to a currently selected bone. If a bone is not selected the new bone will be parented to the Root bone.
+You can create bones through two modes - the **Create Chain Bone** mode, and the **Create Free Bone** mode. The first bone created is set as the **Root** bone for the entire hierarchy attached to that specific Sprite.
 
-When none of the tools are selected, the editor is in Transform mode. Bones can be selected and transformed.
+In **Create Chain Bone** mode, newly created bones are automatically parented to the previous bone in the hierarchy. In **Free Bone mode**, new bones are parented to the currently selected bone regardless of their position in the hierarchy. If a bone is not selected the new bone will be parented to the **Root** bone by default.
 
-## Chain Bone Tool
+When none of these tools are selected, the editor is in **Transform** mode. In this mode, you can select and transform the Pivot, Body and Tail of any bone. 
 
-Select the Create Chain Bone tool ![image alt text](images/image_1.png)and click anywhere on the Sprite to start creating a chain of bones. Press the Escape key to deselect the tool. In Chain mode, child bones are not only parented but are connected to the parents. This allows easier manipulation of bone lengths and positions.
+### Create Bone tool
 
-![image alt text](images/image_2.png)​
+Select the **Create Bone** tool ![image alt text](images/image_1.png)and click anywhere in the **Sprite **to start creating a chain of bones. Press **Esc** to deselect the tool. In this mode, child bones are parented to the previous bone and linked to the to form a continuous chain. This allows easier manipulation of entire chains of bone lengths and positions.
 
-## Free Bone Tool
+![image alt text](images/image_2.png)â€‹	
 
-The Create Free Bone tool is used to create bones that are not part of a chain of bones. Select the Create Free Bone tool and click anywhere on the Sprite to set the Pivot of the new bone move the cursor to where the bone should end and click again to set the Tip of the bone. The new bone created will be parented to a currently selected bone or the Root bone if none is selected.
+### Create Free Bone tool
+
+The **Create Free Bone** tool is used to create bones that are not part of a continuous chain of bones. Select the tool, then click anywhere on the **Sprite** to set the Pivot of the new bone. Next, click to set the Endpoint of the bone, and click again to set the Tip of the bone. A new bone is created that will be parented to either a currently selected bone, or to the Root bone of the hierarchy if no bone is selected.
 
 ![image alt text](images/image_3.png)
 
-## Free Move Tool
+### Free Move Tool
 
-Bones can be transformed by default when none of the tools are selected. The Pivot, Body and Tail can be selected and transformed. The Free move tool is used to detach a bone from a chain. It will no longer be connected to the chain but will still be parented to it original parent.
+The Free Move tool is used to detach a bone from a chain and move it independently. It will no longer be connected to the chain but will still be parented to it original parent bone.
 
  ![image alt text](images/image_4.png)
 
-## Parent Bone Tool
+### Parent Tool
 
-The Parent Bone Tool is used to re-parent a bone to another bone. To change the Parent of a bone. Select the child bone, click on the Parent Bone Tool then click on the target parent.![image alt text](images/image_5.png)
+The **Parent Tool**** **is used to change the parent of a child bone. First select the child bone, then select the **Parent Tool** then click on the new target parent.
 
-## Split Bone Tool
 
-The Split Bone Tool will split a selected bone. To use the tool, select a bone and click on the Split Bone Tool. The selected bone will be split in two.
+![image alt text](images/image_5.png)
+
+### Split Tool
+
+The **Split Tool** will split a selected bone. First select a bone, then select the **Split Tool**. The selected bone will be split into two.
 
  ![image alt text](images/image_6.png)
+
+### Delete Tool
+
+Remove bones with the **Delete Tool** by selecting the bone to be removed, then selecting this tool.
 
 ## Bone Editor Shortcut Keys
 
@@ -52,7 +69,7 @@ The Split Bone Tool will split a selected bone. To use the tool, select a bone a
     <td>Shortcut</td>
   </tr>
   <tr>
-    <td>Create Chain Bone</td>
+    <td>Create Bone</td>
     <td>B</td>
   </tr>
   <tr>
@@ -64,43 +81,46 @@ The Split Bone Tool will split a selected bone. To use the tool, select a bone a
     <td>M</td>
   </tr>
   <tr>
-    <td>Parent Bone</td>
+    <td>Parent </td>
     <td>P</td>
   </tr>
   <tr>
-    <td>Split Bone</td>
+    <td>Split </td>
     <td>S</td>
   </tr>
   <tr>
     <td>Delete</td>
-    <td>Delete</td>
+    <td>Del</td>
   </tr>
   <tr>
-    <td>Escape</td>
-    <td>Deselect Tool</td>
+    <td>*To deselect all tools</td>
+    <td>Esc</td>
   </tr>
 </table>
 
 
 ## Geometry and Weight Editor
 
-This where the Sprite geometry is generated and vertex weights are assigned to bones.
+**Sprite** geometry needs to be generated first before weights can be applied to bind the geometric mesh vertices to the bones of the **Sprite**.
 
 ![image alt text](images/image_7.png)
 
-Sprite geometry has to be generated first before weights can be auto-generated or applied.
+Sprite with generated geometry mesh		Sprite with weights applied 
 
-## Creating and Editing Geometry
+### Generating Geometry Automatically
 
-Geometry can be generated automatically or created manually.
+**Sprite** geometry can be generated automatically or created manually. 
 
-## Generating geometry automatically
+To auto-generate the mesh, set the editor to **Geometry** mode.
 
-To auto-generate the mesh, first select a Sprite by double-clicking it. Then click on the Generate button on the top menu.
+![image alt text](images/image_8.png)
 
- ![image alt text](images/image_8.png)
+Then select the *Generate* button from the top menu.
 
-Adjust the parameters to automatically generate a mesh that is suitable for the Sprite
+ ![image alt text](images/image_9.png)
+
+
+Adjust the following parameters to refine the generated geometric mesh.
 
 <table>
   <tr>
@@ -109,77 +129,133 @@ Adjust the parameters to automatically generate a mesh that is suitable for the 
   </tr>
   <tr>
     <td>Outline Detail</td>
-    <td>Specifies the density of the outline for the mesh.</td>
+    <td>Density and accuracy of the mesh to the Sprite outline.</td>
   </tr>
   <tr>
     <td>Alpha Tolerance</td>
-    <td>The amount of transparency considered when generating the outline.</td>
+    <td>Threshold for transparency considered when generating the outline.</td>
   </tr>
   <tr>
     <td>Subdivide</td>
-    <td>Subdivides the mesh to create additional tessellation inside of the outline.</td>
+    <td>Subdivides the mesh to increase tessellation. Higher values increase the tessellation and complexity of the generated mesh.</td>
   </tr>
 </table>
 
 
-## Creating geometry manually
+### Creating Geometry Manually
 
-Mesh geometry can be created manually by using the Create Vertex or Create Edge feature. If there are multiple Sprites defined, Double-Click on a Sprite to select it.
+Mesh geometry can be created manually by using the **Create Vertex** or **Create Edge** modes. Double-click on within a **Sprite's** outline to select it.
 
- ![image alt text](images/image_9.png)
+ ![image alt text](images/image_10.png)
 
-To use Create Vertex, select it from the top menu. Left-Click anywhere within the Sprite Rect to create a vertex. Create Edge requires at least one vertex already created to be used. Click on vertices to create edges.
+From the top menu, select **Create Vertex** and click anywhere within the **Sprite **selection to begin creating vertices. Then select **Create Edge** and click on vertices to connect them together to form new edges. Edges can be split into additional sections by selecting **Split Edge** and clicking on 
 
-Additionally, in Selection mode geometry can also be edited. Double-Clicking will create a vertex. Holding Shift will create edges.
-
-![image alt text](images/image_10.png)
+You can perform all these functions directly in **Selection **mode as well. Double-click within the **Sprite **to create vertices. Hold **Shift** to connect a selected vertex to another to create an edge.
 
 ## Assigning Skin Weights
 
-Switch to the Weights section. Select a Sprite to apply weights. Click on the Auto button ![image alt text](images/image_11.png) in the top menu to automatically generate weights based on the bones.
-
-In some cases the automatically generated skin weights would suffice but the skin weights can also be edited manually.
+Select the **Weights** mode, and then select a **Sprite** to apply skin weights to. Click on the **Auto** button ![image alt text](images/image_11.png) to automatically generate weights based on the **Sprite's** bones. The weight  but can be manually refined if needed. To view 
 
 ## Editing Skin Weights
 
-The Weight Editor is used to manually edit skin weights.
+The **Weight Editor** is used to manually edit the skin weights of vertices. There are two ways to 
 
  ![image alt text](images/image_12.png)
 
-The weights for selected vertices can also be viewed and further adjusted with the vertex inspector.
+### Weight Editor Settings
+
+<table>
+  <tr>
+    <td>Parameter</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>Mode</td>
+    <td>Current behavior of the Weight Editor</td>
+  </tr>
+  <tr>
+    <td>Add and Subtract</td>
+    <td>Increases/Decreases influence on vertices around the selected bone</td>
+  </tr>
+  <tr>
+    <td>Grow and Shrink</td>
+    <td>Increases/Decreases influence on vertices that are already affected by the selected bone. </td>
+  </tr>
+  <tr>
+    <td>Smooth</td>
+    <td>Averages the weights of vertices with their neighbors, creating smoother deformations</td>
+  </tr>
+  <tr>
+    <td>Bone (not available in Smooth mode)</td>
+    <td>Currently selected bone</td>
+  </tr>
+  <tr>
+    <td>Normalize</td>
+    <td>Ensures the normalized weight of selected vertices equals to 1</td>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td>Amount of weight applied on selected vertices</td>
+  </tr>
+  <tr>
+    <td>Following parameters only available in the Brush Weight Editor</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Size</td>
+    <td>Size of the brush cursor</td>
+  </tr>
+  <tr>
+    <td>Hardness</td>
+    <td>Amount of weight applied by the brush. Higher values increase  the amount of weight per brushstroke.</td>
+  </tr>
+  <tr>
+    <td>Step</td>
+    <td>Number of steps need to apply the full weight of brush.</td>
+  </tr>
+</table>
 
 
+The weights for selected vertices can be viewed and further adjusted with the vertex inspector located at the bottom-left of the Editor window.
 
-## Assigning Skin Weights
+![image alt text](images/image_13.png)
 
-Switch to the Weights section. Select a Sprite to apply weights. Click on the Auto button ![image alt text](images/image_13.png) in the top menu to automatically generate weights based on the bones.
+ 
 
-In some cases the automatically generated skin weights would suffice but the skin weights can also be edited manually.
+You can preview the effect of the painted weights within the **Sprite Editor**. Select and hold a bone at its head to move it freely, or select another part of the bone to pivot it around its head. The **Sprite** mesh deforms according to the weights painted. Releasing the bones resets them and the mesh back to their default positions.
 
-## Editing Skin Weights
-
-The Weight Editor is used to manually edit skin weights.
-
- ![image alt text](images/image_14.png)
-
-The weights for selected vertices can also be viewed and further adjusted with the vertex inspector.
-
-
-
-## Brush Tool
-
-The Brush tool is alternate method of applying bone influence to vertices.
-
-![image alt text](images/image_15.png)
+# 
 
 # Sprite Skin Component
 
-The Sprite Skin Component is required for the bones to deform the Sprite mesh. To use the Sprite Skin Component, add the component to a Sprite. Click on the Generate bones to generate the bone hierarchy of the Sprite.
+The **Sprite Skin** component is required for the bones to deform the **Sprite** mesh. Drag and drop the **Sprite Asset **onto the **Scene **after setting up its bones, geometry and weights in the **Sprite Editor.  **Add the **Sprite Skin **component to the **Sprite**. Click **Create Bones*** *to generate the bone hierarchy of the **Sprite** within the **Scene**.
+
+![image alt text](images/image_14.png) 
+
+![image alt text](images/image_15.png)
+
+
+
+
+
+
+Select and hold a bone to pivot it around its head and deform the **Sprite **mesh directly in the **Scene** for animation.
 
 ![image alt text](images/image_16.png)
 
+**Shift+click** different bones to select or deselect them, multiple bones can be selected in this way. Moving selected bones together deforms the mesh across their total length.
+
 ![image alt text](images/image_17.png)
 
-The bones can then be manipulated with the standard Transform tools to deform the mesh and animated the Sprite. Note the Sprite Rect tool cannot be used to transform the bone gizmos.
-
 ![image alt text](images/image_18.png)
+
+Bones that are not directly chained together can also be selected and moved together.  Areas of the mesh influenced by the unselected bone are not deformed. 
+
+![image alt text](images/image_19.png)
+
+Select and hold the head of a bone to detach it from the previous bone in the chain, the mesh will deform accordingly.
+
+![image alt text](images/image_20.png)
+
+The standard **Transform **tools can also be used to to deform the **Sprite's **geometry mesh for greater precision**.** Note that the **Rect Transform** tool cannot be used to transform the bone gizmos.
+
