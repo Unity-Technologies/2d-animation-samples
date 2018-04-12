@@ -257,5 +257,5 @@ Select and hold the head of a bone to detach it from the previous bone in the ch
 
 ![image alt text](images/image_20.png)
 
-The standard **Transform **tools can also be used to to deform the **Sprite's **geometry mesh for greater precision**.** Note that the **Rect Transform** tool cannot be used to transform the bone gizmos.
+The standard **Transform** tools can also be used to to deform the **Sprite's** geometry mesh for greater precision. Note that the **Rect Transform** tool cannot be used to transform the bone gizmos.
 
