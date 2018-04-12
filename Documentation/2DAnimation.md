@@ -228,7 +228,7 @@ You can preview the effect of the painted weights within the **Sprite Editor**. 
 
 # Sprite Skin Component
 
-The **Sprite Skin** component is required for the bones to deform the **Sprite** mesh. Drag and drop the **Sprite Asset **onto the **Scene **after setting up its bones, geometry and weights in the **Sprite Editor.  **Add the **Sprite Skin **component to the **Sprite**. Click **Create Bones*** *to generate the bone hierarchy of the **Sprite** within the **Scene**.
+The **Sprite Skin** component is required for the bones to deform the **Sprite** mesh. Drag and drop the **Sprite Asset** onto the **Scene** after setting up its bones, geometry and weights in the **Sprite Editor**. Add the **Sprite Skin** component to the **Sprite**. Click **Create Bones** to generate the bone hierarchy of the **Sprite** within the **Scene**.
 
 ![image alt text](images/image_14.png) 
 
