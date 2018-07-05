@@ -2,17 +2,17 @@
 
 ## Workflow
 
-1. Select the Sprite in the **Sprite Editor**.
+1. Select the Sprite in the **Sprite Editor**. 
 
-2. Build the Sprite Bones hierarchy in the **Bone Editor** (menu: Sprite Editor > Bone Editor).
+2. Build the Sprite Bones hierarchy in the **[Bone Editor](#BoneEditor)** (menu: **Sprite Editor** > **Bone Editor**).
 
-3. Generate and edit geometry, and assign skin weights in the **Geometry And Weight Editor** (menu**: Sprite Editor > Geometry And Weight Editor).
+3. Generate and edit geometry, and assign skin weights in the **[Geometry and Weight Editor](#GeoEditor)** (menu: **Sprite Editor** > **Geometry And Weight Editor**).
 
-4. Place the Sprite in a Scene and add the **Sprite Skin** component to generate the bones of the Sprite.
+4. Place the Sprite in a Scene and add the **[Sprite Skin](#SpriteSkin)** component to generate the bones of the Sprite.
 
-5. The Sprite is ready to be animated!
+5. The Sprite is now ready to be animated.
 
-## Bone Editor
+## <a id="BoneEditor"></a>Bone Editor
 
 Create and define the bones for your Sprites and their hierarchy in the **Bone Editor**.
 
@@ -20,40 +20,47 @@ Create and define the bones for your Sprites and their hierarchy in the **Bone E
 
 ## Create and Edit Bones
 
-When building bones to for the animation of a Sprite, the first bone created is the **Root** bone for the bone hierarchy of that Sprite. There are two modes for creating bones - the **Create Chain Bone** mode, and the **Create Free Bone** mode. 
-In **Create Chain Bone** mode, newly created bones are automatically parented to the previous bone in the hierarchy. In **Free Bone mode**, new bones are parented to the currently selected bone regardless of their position in the hierarchy. If no bone is currently selected, the new bone is automatically parented to the **Root** bone by default.
-If no tools are selected, the editor is in **Transform** mode, and a bone's Pivot, Body and Tail can be selected and transformed.
+There are two tools for creating bones - the **Create Bone Tool**, and the **Create Free Bone** **Tool**. With both tools, the first bone created is the **Root** bone of the Sprite's bone hierarchy. However, both tools parent newly created bones differently. 
+
+If no tools are selected, the **Bone Editor** is in **Transform** mode. In this mode, select and move any bone's *Pivot*, *Body* or *Tail* around to transform its length and size.
 
 ### Create Chain Bone tool
 
-Select the **Create Chain Bone** tool ![Create Bone icon](images/chainbonetool.png) and click anywhere in the Sprite to start creating a chain of bones. Press **Esc** to deselect the tool. In this mode, it is easy to control entire chains of bones and their lengths and positions, as each bone is connected to each other together in a continuous chain.
+Select the **Create Bone** tool ![Create Bone icon](images/chainbonetool.png)and click anywhere in the Sprite to start creating a chain of bones. In **Create Chain Bone** mode, newly created bones are automatically parented to the previous bone in the hierarchy in a continuous chain. To deselect this tool, select **Esc**.
 
 ![Chain Bones](images/chainbones.png)	
 
 ### Create Free Bone tool
 
-The **Create Free Bone** tool is used to create bones that do not form a continuous chain of bones. 
-1. Select a bone that will be the parent of the new bone. If no bone is selected, the *Root * bone is the default parent.
-2. Select the tool, then click anywhere to set the start/Pivot of the new bone. 
-3. Move the cursor to where the bone should end, and click to set the Tip of the bone. The new bone is created.
+With the **Create Free Bone** tool, new bones are parented to the currently selected bone and ignores the bone chain hierarchy. This is useful if you need to create bones that do not form a continuous chain.
+
+To create a new bone:
+
+1. Select and highlight a bone to be the parent. If no bone is selected, the **Root** bone is the default parent.
+
+2. Select the tool, then click an empty location to set the starting *Pivot* of the new bone.
+
+3. Move the cursor to where the bone should end, and click to set the *Tip* of the bone. 
+
+4. The new bone is created, parented to the bone selected in step 1.
+
 ![Free Bone tool](images/freebones.png)
 
 ### Free Move Tool
 
-The Free Move tool is used to detach a bone from a chain and move it independently. It will no longer be connected to the chain but will still be parented to it original parent bone.
+Use the **Free Move** tool to detach a bone from a chain and move it independently, however it is still treated as being parented to its original parent bone.
 
  ![Free Move tool](images/freemovetool.png)
 
 ### Parent Tool
 
-The **Parent Tool** is used to change the parent of a child bone. First select the child bone, then click **Parent Tool** then click on the new target parent.
-
+The **Parent Tool** is used to change the parent of a child bone. First select the child bone, then select the **Parent Tool**, and finally select a bone to be the new parent.
 
 ![Parent tool](images/parentbonetool.png)
 
 ### Split Tool
 
-The **Split Tool** splits a selected bone. First select a bone, then select the **Split Tool** to split the selected bone into two.
+The **Split Tool** will split a selected bone. First select a bone, then select the **Split Tool**. The selected bone will be split into two even length bones.
 
  ![Split Bone ](images/splitbonetool.png)
 
@@ -73,7 +80,8 @@ Select a bone, then click the **Delete Tool** to remove it.
 |**Delete**|Del|
 |*To deselect all tools*|Esc|
 
-## Geometry and Weight Editor
+## <a id="GeoEditor"></a>Geometry and Weight Editor
+
 This editor is where Sprite geometry is generated, and vertex weights are then assigned to the bones to deform the geometry.
 
 ![Geo Weight editor](images/geowaiteditor.png)
@@ -141,25 +149,18 @@ The weights for selected vertices can be viewed and further adjusted with the ve
 
 ![Weight inspector](images/weightinspector.png)
 
- 
-
 You can preview the effect of the painted weights within the **Sprite Editor**. Select and hold a bone to move or rotate it. The Sprite's geometry mesh deforms according to the weights painted. Releasing the bones resets them and the mesh back to their original state.
 
-## Sprite Skin Component
+## <a id="SpriteSkin"></a>Sprite Skin Component
 
 The **Sprite Skin** component is needed for the bones to deform the Sprite mesh in the Scene.  
 ![Sprite Skin component](images/spriteskincomponent.png)  
+
 1. Drag and drop the Sprite Asset onto the Scene after its bones, geometry, and weights have been are set-up in the **Sprite Editor**. 
 2. Add the **Sprite Skin** component to the  Sprite. 
 3. Click **Create Bones** to generate the bone hierarchy of the Sprite in the Scene.
  
-
 ![Bone hierarcy in Scene](images/bonehierarchy.png)
-
-
-
-
-
 
 Select and hold a bone to pivot it around its head and deform the Sprite's mesh directly in the Scene to begin animating it.
 
@@ -178,7 +179,7 @@ Select and hold the head of a bone to detach it from the previous bone in the ch
 
 ![Plunkah detached deform](images/PlunkahDetachedDeform.png)
 
-Use the standard Transform tools to deform the Sprite's  geometry mesh with greater precision. However, note that the **Rect Transform** tool cannot be used to transform the bones.  
+Use the standard **Transform** tools to deform the Sprite's geometry mesh for greater precision. Note that the **Rect Transform** tool *cannot* be used to transform the bone gizmos.
 
 ![Transform tools](images/bonetransform.png)
 
