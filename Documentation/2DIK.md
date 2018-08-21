@@ -73,12 +73,12 @@ The **IK Manager 2D** component controls the **IK Solvers** in the hierarchy. Wh
 Add the Manager component (INSERT PATH) to the highest bone in the hierarchy, commonly referred to as the *Root* bone. 
 
  1. Add the component to *PlunkahG* as it is the *Root* bone in the hierarchy
-	![Add Root Plunkah](images/2D_IK_Image1.png)
+ ![Add Root Plunkah](images/2D_IK_Image1.png)
 
 2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers* list (see below).
 	![AddIK](images/2D_IK_Image2.jpg)
 	 
-3. A drop-down menu then appears with three options - **Chain (CCD)**, **Chain (FABRIK)**, and **Limb**. Each type of [IK Solver](#IKSolvers) uses a different algorithm for its solution. 
+3. A drop-down menu then appears with three options - **Chain (CCD)**, **Chain (FABRIK)**, and **Limb**. Each type of [IK Solver](#IKSolvers) uses a different algorithm for its solution.<br>
 ![Dropdown](images/2D_IK_Image3.jpg)
 
 **IK Solvers** are iterated in descending order, with Solvers lower in the list referring to the positions set by the higher Solvers. The order of Solvers usually reflects the order of bones/Transforms in the skeleton hierarchy. For example, if the arm bone is the child of the torso bone,   then the torso's IK Solver should be set above the arm’s Solver in the list. Rearrange the Solvers by dragging the leftmost edge of a row up or down.
@@ -141,7 +141,7 @@ Follow the steps below to set up an **Effector**:
 
 If the **Create Effector** button appears inactive, ensure that the [Chain Length](#ChainL) value is set to one or greater.
 
-6. The Effector is created as a child of the IK Solver. It appears as a circle gizmo in the Scene view. Move the **Effector** to manipulate the connected chain of bones managed.
+6. The Effector is created as a child of the IK Solver. It appears as a circle gizmo in the Scene view. Move the **Effector** to manipulate the connected chain of bones managed.<br>
 ![Effector gizmo](images/2D_IK_Image8.png)
   
 
