@@ -76,10 +76,10 @@ Add the Manager component (INSERT PATH) to the highest bone in the hierarchy, co
 	![Add Root Plunkah](images/2D_IK_Image1.png)
 
 2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers* list (see below).
-	![AddIK](images/2D_IK_Image 2.jpg)
+	![AddIK](images/2D_IK_Image2.jpg)
 	 
 3. A drop-down menu then appears with three options - **Chain (CCD)**, **Chain (FABRIK)**, and **Limb**. Each type of [IK Solver](#IKSolvers) uses a different algorithm for its solution. 
-![Dropdown](images/2D_IK_Image 3.jpg)
+![Dropdown](images/2D_IK_Image3.jpg)
 
 **IK Solvers** are iterated in descending order, with Solvers lower in the list referring to the positions set by the higher Solvers. The order of Solvers usually reflects the order of bones/Transforms in the skeleton hierarchy. For example, if the arm bone is the child of the torso bone,   then the torso's IK Solver should be set above the arm’s Solver in the list. Rearrange the Solvers by dragging the leftmost edge of a row up or down.
 
@@ -126,23 +126,23 @@ After creating an **IK Solver**,  the next step is to set the **Target** bone an
 Follow the steps below to set up an **Effector**:
 
 1. Select the last bone in the chain.
-	![Last bone in chain](images/2D_IK_Image 4.png)
+	![Last bone in chain](images/2D_IK_Image4.png)
 
 2. Create an empty **Transform** (right-click > Create Empty). It is automatically created as a child of the highlighted bone.
 
 3. Move the position of the Transform to the tip of the last bone in the chain.
-	![Transform at tip of bone](images/2D_IK_Image 5.png)
+	![Transform at tip of bone](images/2D_IK_Image5.png)
 
 4. Select the **IK Solver.** With its Inspector window open, drag the Transform from the hierarchy onto the **Target** field
-	 ![Target field](images/2D_IK_Image 6.jpg)
+	 ![Target field](images/2D_IK_Image6.jpg)
 
 5. Click the **Create Effector** button. An Effector is created on the Transform's position.
-	![Create Effector](images/2D_IK_Image 7.png)
+	![Create Effector](images/2D_IK_Image7.png)
 
 If the **Create Effector** button appears inactive, ensure that the [Chain Length](#ChainL) value is set to one or greater.
 
 6. The Effector is created as a child of the IK Solver. It appears as a circle gizmo in the Scene view. Move the **Effector** to manipulate the connected chain of bones managed.
-![Effector gizmo](images/2D_IK_Image 8.png)
+![Effector gizmo](images/2D_IK_Image8.png)
   
 
 # Scripting API Reference
