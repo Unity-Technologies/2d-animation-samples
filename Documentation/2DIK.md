@@ -73,10 +73,10 @@ The **IK Manager 2D** component controls the **IK Solvers** in the hierarchy. Wh
 Add the Manager component (INSERT PATH) to the highest bone in the hierarchy, commonly referred to as the *Root* bone. 
 
  1. Add the component to *PlunkahG* as it is the *Root* bone in the hierarchy
-	![Add Root Plunkah](image/2D_IK_Image 1.jpg)
+	![Add Root Plunkah](images/2D_IK_Image 1.jpg)
 
-2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers *list (see below).
-	![image alt text](image/2D_IK_Image 2.jpg)
+2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers* list (see below).
+	![image alt text](images/2D_IK_Image 2.jpg)
 	 
 3. A drop-down menu then appears with three options - **Chain (CCD)**, **Chain (FABRIK)**, and **Limb**. Each type of [IK Solver](#IKSolvers) uses a different algorithm for its solution. 
 ![image alt text](image/2D_IK_Image 3.jpg)
