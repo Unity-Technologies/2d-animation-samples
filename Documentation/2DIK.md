@@ -73,7 +73,7 @@ The **IK Manager 2D** component controls the **IK Solvers** in the hierarchy. Wh
 Add the Manager component (INSERT PATH) to the highest bone in the hierarchy, commonly referred to as the *Root* bone. 
 
  1. Add the component to *PlunkahG* as it is the *Root* bone in the hierarchy
-	![Add Root Plunkah](images/2D_IK_Image 1.png)
+	![Add Root Plunkah](images/2D_IK_Image1.png)
 
 2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers* list (see below).
 	![AddIK](images/2D_IK_Image 2.jpg)
