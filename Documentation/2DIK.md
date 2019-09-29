@@ -76,15 +76,15 @@ The following are properties are available to all Solvers:
 The **IK Manager 2D** component controls the **IK Solvers** in the hierarchy.  Add the Manager component to the highest bone in the hierarchy, commonly referred to as the *Root* bone.
 
 1. In this example, add the component to *PlunkahG* as it is the *Root* bone in the hierarchy
-   ![Add Root Plunkah](images/2D_IK_Image 1.png)
+   ![Add Root Plunkah](images/2D_IK_Image%201.png)
 
 
 2. To add an IK Solver, click the + symbol at the bottom right of the *IK Solvers* list (see below).
-   ![image alt text](images/2D_IK_Image 2.jpg)
+   ![image alt text](images/2D_IK_Image%202.jpg)
 
 
 3. A drop-down menu then appears with three options - **Chain (CCD)**, **Chain (FABRIK)**, and **Limb**. Each type of [IK Solver](#IKSolvers) uses a different algorithm to solve for the position of Effectors.
-   ![image alt text](images/2D_IK_Image 3.jpg)
+   ![image alt text](images/2D_IK_Image%203.jpg)
 
 **IK Solvers** are iterated in descending order, with Solvers lower in the list referring to the positions set by the Solvers higher in the list. The order of Solvers usually reflects the order of bones/Transforms in the skeleton hierarchy. 
 
@@ -134,27 +134,27 @@ After creating an **IK Solver**,  the next step is to set the **Effector** bone/
 Follow the steps below to set a **Target**:
 
 1. Select the last bone in the chain.
-   ![image alt text](images/2D_IK_Image 4.png)
+   ![image alt text](images/2D_IK_Image%204.png)
 
 
 2. Create an empty **Transform** (right-click > Create Empty). It is automatically created as a child of the highlighted bone.
 
 
 3. Move the position of the Transform to the tip of the last bone in the chain.
-   ![image alt text](images/2D_IK_Image 5.png)
+   ![image alt text](images/2D_IK_Image%205.png)
 
 
 4. Select the **IK Solver.** With its Inspector window open, drag the Transform from the hierarchy onto the **Effector** field
-   ![image alt text](images/2D_IK_Image 6.jpg)
+   ![image alt text](images/2D_IK_Image%206.jpg)
 
 
 5. Click the **Create Target** button. A Target is created at the Transform's position.
-   ![image alt text](images/2D_IK_Image 7.png)
+   ![image alt text](images/2D_IK_Image%207.png)
 
 If the **Create Target** button appears inactive, ensure that the [Chain Length](#ChainL) value is set to one or greater.
 
 6. The Target is created as a child of the IK Solver. It appears as a circle gizmo in the Scene view. Move the **Target** to manipulate the connected chain of bones.
-   ![image alt text](images/2D_IK_Image 8.png)
+   ![image alt text](images/2D_IK_Image%208.png)
 
 # Scripting API Reference
 
