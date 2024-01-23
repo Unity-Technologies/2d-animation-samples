@@ -182,4 +182,4 @@ Select and hold the head of a bone to detach it from the previous bone in the ch
 Use the standard **Transform** tools to deform the Sprite's geometry mesh for greater precision. Note that the **Rect Transform** tool *cannot* be used to transform the bone gizmos.
 
 ![Transform tools](images/bonetransform.png)
-
+end.
