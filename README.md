@@ -1,4 +1,4 @@
-# 2d-animation-samples
+# 2d Animation Samples
 
 This repository contains samples of the 2D Animation features to be used with Unity 2018.1 and newer.
 
